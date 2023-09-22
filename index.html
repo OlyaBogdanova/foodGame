@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P:300,300italic,regular,italic,500,500italic,700,700italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>food Game</title>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Catch The Food</h1>
+      <button class="btn" id="start-btn">Play Game</button>
+    </div>
+
+    <div class="screen">
+      <h1>What is your favorite food?</h1>
+      <ul class="foods-list">
+        <li>
+          <button class="choose-food-btn">
+            <p>Banana</p>
+            <img src="./images/banana.png" alt="banana">
+          </button>
+        </li>
+        <li>
+          <button class="choose-food-btn">
+            <p>Burger</p>
+            <img
+               src="./images/burger.png"
+               alt="burger"
+               />
+          </button>
+        </li>
+        <li>
+          <button class="choose-food-btn">
+            <p>Cherry</p>
+            <img
+               src="./images/cherry.png"
+               alt="cherry"
+               />
+          </button>
+        </li>
+        <li>
+          <button class="choose-food-btn">
+            <p>Peach</p>
+            <img
+               src="./images/peach.png"
+               alt="peach"
+               />
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="screen game-container" id="game-container">
+      <h3 id="time" class="time">Time: 00:00</h3>
+      <h3 id="score" class="score">Score: 0</h3>
+      <h5 id="message" class="message">
+        Are you annoyed yet? <br>
+        You are playing an impossible game!!
+      </h5>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
